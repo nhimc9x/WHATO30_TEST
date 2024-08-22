@@ -19,10 +19,11 @@ export const Header = () => {
           alt="logo"
         />
       </NavLink>
-      <div className="flex text-white text-sm gap-12 uppercase font-medium">
+      <div className="flex items-center text-white text-sm gap-12 uppercase font-medium">
         <NavItem title="Introduction" />
         <NavItem title="Solution" />
         <NavItem title="Rate plan" />
+        <div className="w-[1px] h-6 bg-[#ccc8c6]"></div>
         <NavItem to="/login" title="Login" />
         <NavItem title="Apply for free use" />
       </div>
