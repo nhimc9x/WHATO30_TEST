@@ -8,15 +8,15 @@ export const BestProduct = () => {
       style={{ backgroundImage: `url(${besBg})` }}
       className="w-full h-max bg-cover bg-center py-28"
     >
-      <div className="text-ct-orange-color text-center">
+      <div className="text-ct-orange-color text-center px-6">
         <div className="text-5xl font-bold tracking-[5px] uppercase mb-10">Best Product</div>
-        <div className="text-xl w-[700px] mx-auto">
+        <div className="text-xl max-w-[700px] mx-auto">
           How to create mobile-optimized videos in minutes. Not a designer,
           every team makes a lot of videos Can be trimmed. Take the first
         </div>
       </div>
-      <div className="px-[9%] my-20">
-        <div className="w-full h-max bg-red-500 grid grid-cols-3">
+      <div className="sms:px-8 px-2 my-20">
+        <div className="w-[86%] mx-auto gap-y-28 h-max grid 2xl:grid-cols-3 grid-cols-1">
           {bestProducts.map((product) => (
             <BestProductItem
               key={product.id}

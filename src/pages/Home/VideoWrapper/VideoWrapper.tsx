@@ -45,7 +45,7 @@ export const VideoWrapper = () => {
         <ResponsiveImage className='absolute object-contain -right-[196px] bottom-[112px] z-[1]' src={videoObj08} src2x={videoObj08_2x} src3x={videoObj08_3x} alt='video-obj-agrry' />
         <ResponsiveImage className='absolute object-contain -right-[168px] bottom-[528px]' src={videoObj09} src2x={videoObj09_2x} src3x={videoObj09_3x} alt='video-obj-inky' />
       </div>
-      <div className="w-[720px] mx-auto text-ct-black-color-bold text-center mb-16">
+      <div className="max-w-[720px] w-full px-4 mx-auto text-ct-black-color-bold text-center mb-16">
         <div className="font-extrabold text-4xl uppercase tracking-[4.5px]">what happened</div>
         <div className="leading-7 mt-10 mb-12 text-xl">
           How to create mobile-optimized videos in minutes. Not a designer,
@@ -53,7 +53,7 @@ export const VideoWrapper = () => {
         </div>
         <SeeMoreBtn className='mx-auto' />
       </div>
-      <div className="w-[65%] mx-auto z-10 relative">
+      <div className="w-[90%] max-w-[1220px] mx-auto z-10 relative">
         <ResponsiveImage className='w-full object-contain' src={videoImg} src2x={videoImg2x} src3x={videoImg3x} alt='video-img' />
       </div>
 

@@ -4,8 +4,8 @@ import { SeeMoreBtn } from '~/components/SeeMoreBtn/SeeMoreBtn'
 
 export const GridProduct = () => {
   return (
-    <div className="py-32">
-      <div className="grid mx-auto grid-cols-5 gap-5 w-max">
+    <div className="py-32 px-4">
+      <div className="grid mx-auto 3xl:grid-cols-5 min-[1380px]:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 w-max">
         {productData.map((product) => (
           <CardProduct
             key={product.id}

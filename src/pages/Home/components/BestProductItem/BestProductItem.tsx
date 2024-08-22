@@ -42,7 +42,7 @@ const rankNumberIcon = {
 
 export const BestProductItem = ({ src, src2x, src3x, rankNumber, description, linkTo }: Props) => {
   return (
-    <div className="h-[514px] w-full relative">
+    <div className="h-[514px] mx-auto max-w-[543px] w-full relative">
       <ResponsiveImage className='w-full h-full object-cover' src={src} src2x={src2x} src3x={src3x} alt="Thumd Product" />
       <div className="absolute left-0 -top-12">
         <ResponsiveImage className='w-full h-full object-contain' {...rankNumberIcon[rankNumber]} alt="Ranking number" />
