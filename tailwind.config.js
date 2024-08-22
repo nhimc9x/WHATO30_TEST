@@ -6,6 +6,13 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'sxs': '440px',
+        'xs': '475px',
+        'sms': '576px',
+        'mdl': '960px',
+        '3xl': '1680px'
+      },
       fontFamily: {
         'Montserrat': ['Montserrat', 'sans-serif'],
       },

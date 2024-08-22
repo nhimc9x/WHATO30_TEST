@@ -29,11 +29,11 @@ import { IssueItem } from '../components/IssueItem/IssueItem'
 
 export const Issue = () => {
   return (
-    <div className="w-full h-[1143px] bg-ct-yellow-color relative py-36">
-      <ResponsiveImage className='object-contain absolute top-[43px] right-[70px]' src={diceFive} src2x={diceFive2x} src3x={diceFive3x} alt="Dice Five" />
-      <ResponsiveImage className='object-contain absolute top-[163px] right-[68px]' src={diceThree} src2x={diceThree2x} src3x={diceThree3x} alt="Dice Three" />
+    <div className="w-full h-max bg-ct-yellow-color relative py-36">
+      <ResponsiveImage className='object-contain w-[6%] max-w-[95px] absolute top-[43px] xl:right-[70px] right-[35px]' src={diceFive} src2x={diceFive2x} src3x={diceFive3x} alt="Dice Five" />
+      <ResponsiveImage className='object-contain w-[6%] max-w-[112px] absolute xl:top-[163px] sm:top-[112px] top-[80px] xl:right-[68px] right-[34px]' src={diceThree} src2x={diceThree2x} src3x={diceThree3x} alt="Dice Three" />
 
-      <div className="w-[720px] mx-auto text-[#110e03] text-center">
+      <div className="max-w-[720px] w-full px-4 mx-auto text-[#110e03] text-center">
         <div className="font-bold text-4xl uppercase tracking-[4.5px]">Happened’s issue</div>
         <div className="leading-7 mt-10 mb-12">
           모바일에 최적화된 비디오를 단 몇 분 만에 제작해보세요. 디자이너가 아니더라도,  모든 팀에서
@@ -42,9 +42,10 @@ export const Issue = () => {
         <SeeMoreBtn className='mx-auto' />
       </div>
 
-      <div className="mt-32 h-[480px] grid grid-cols-5 gap-0 border-[3px] border-[#110e03]">
-        <div className="bg-ct-orange-color flex flex-col items-center justify-center gap-16 relative">
-          <div className="absolute right-0 -bottom-20 w-2/5">
+      <div className="mt-32 grid 3xl:grid-cols-5 xl:grid-cols-4 sms:grid-cols-2 grid-cols-1 mx-8 xl:mx-0 gap-0 border-[3px] border-[#110e03]">
+
+        <div className="hidden bg-ct-orange-color 3xl:flex flex-col items-center 3xl:col-span-1 col-span-4 justify-center gap-16 relative">
+          <div className="absolute right-0 -bottom-20 w-2/5 max-w-[155px]">
             <ResponsiveImage className='w-full h-full object-cover' src={newsObj03} src2x={newsObj03_2x} src3x={newsObj03_3x} alt="News Object" />
           </div>
           <div className="text-[55px] leading-[57px] uppercase font-extrabold text-[#110e03] text-center px-8">whpn issue</div>
@@ -56,6 +57,12 @@ export const Issue = () => {
         <IssueItem title='e brand' src={newsImg03} src2x={newsImg03_2x} src3x={newsImg03_3x} />
         <IssueItem title='c brand' src={newsImg04} src2x={newsImg04_2x} src3x={newsImg04_3x} isActive={true} isLol={true} />
         <IssueItem title='d brand' src={newsImg05} src2x={newsImg05_2x} src3x={newsImg05_3x} />
+      </div>
+      <div className="3xl:hidden bg-ct-orange-color w-max flex sms:flex-row flex-col max-w-[612px] h-[180px] mt-12 mx-auto border-2 border-[#110e03] items-center justify-center sm:gap-x-16 gap-x-4">
+        <div className="md:text-[55px] md:leading-[57px] text-4xl sms:leading-[42px] leading-[52px] uppercase font-extrabold text-[#110e03] text-center px-4">whpn issue</div>
+        <NavLink to={''} className="flex-1 sms:pr-4 m-0 max-w-28">
+          <ResponsiveImage className='size-full object-contain' src={newsImg01} src2x={newsImg01_2x} src3x={newsImg01_3x} alt="News Image" />
+        </NavLink>
       </div>
     </div>
   )

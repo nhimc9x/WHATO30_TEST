@@ -4,12 +4,12 @@ import naverIcon from '~/assets/images/naver-icon.png'
 import kakaoIcon from '~/assets/images/kakao-icon.png'
 import { NavLink } from 'react-router-dom'
 import { InputForm } from '~/components/InputForm/InputForm'
-import { ButtonForm } from '~/layouts/MainLayout/components/ButtonForm/ButtonForm'
+import { ButtonForm } from '~/components/ButtonForm/ButtonForm'
 
 export const Login = () => {
   return (
     <div className="py-28">
-      <div className="max-w-[454px] w-full mx-auto">
+      <div className="max-w-[454px] w-full mx-auto px-6">
         <div className="text-[45px] text-ct-blue-color font-extrabold text-center">Welcome!</div>
         <div className="h-0.5 w-full bg-ct-black-color-normal mt-14 mb-8"></div>
         <form>

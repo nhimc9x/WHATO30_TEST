@@ -6,11 +6,11 @@ import { FooterNavColumn } from './FooterNavColumn/FooterNavColumn'
 
 export const Footer = () => {
   return (
-    <div className="px-24 text-sm">
+    <div className=" min-[1400px]:px-24 sms:px-10 px-6 text-sm">
       <div className="border-t border-b border-[#f4f4f4] py-12">
-        <div className="flex justify-between">
+        <div className="flex md:flex-row flex-col justify-between gap-y-12">
           <FooterNavColumn title="what happened" listNavigation={whatHappened} />
-          <div className="grid grid-cols-4 gap-24">
+          <div className="grid xl:grid-cols-4 grid-cols-2 md:gap-24 gap-12">
             <FooterNavColumn title="about us" listNavigation={aboutUs} />
             <FooterNavColumn title="my order" listNavigation={myOrder} />
             <FooterNavColumn title="my account" listNavigation={myAccount} />
@@ -18,8 +18,8 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="pt-6 pb-20 leading-6 text-[#a9a9a9] flex justify-between">
-        <div className="">
+      <div className="pt-6 pb-20 leading-6 text-[#a9a9a9] flex md:flex-row flex-col items-center justify-between gap-6">
+        <div className="flex-1">
           <div className="">
             © 2020-2021 what happened corp  l  (주) 왓헤픈 ｜ 대표자 : 홍길동 ｜ 사업자 등록번호 : 356-00-00000 ㅣ test0101@what happened.co.kr
           </div>
