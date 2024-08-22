@@ -16,7 +16,7 @@ export const Register = () => {
 
   const onSubmit = (data: RegisterFormType) => {
     console.log(data)
-    // Call API
+    // Call AP
     alert('Registered successfully!!')
   }
 

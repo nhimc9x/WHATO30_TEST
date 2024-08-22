@@ -6,7 +6,7 @@ export const MainLayout = () => {
   return (
     <div className="">
       <Header />
-      <div className="pt-20 max-w-[1920px] mx-auto w-full">
+      <div className="pt-20 max-w-[1920px] mx-auto w-full overflow-hidden">
         <Outlet />
       </div>
       <Footer />
