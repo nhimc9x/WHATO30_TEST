@@ -1,6 +1,6 @@
 import { useForm } from 'react-hook-form'
 import { LabelWrapper } from './componets/LabelWrapper/LabelWrapper'
-import { ButtonForm } from '~/layouts/MainLayout/components/ButtonForm/ButtonForm'
+import { ButtonForm } from '~/components/ButtonForm/ButtonForm'
 
 export type RegisterFormType = {
   email: string;
@@ -22,7 +22,7 @@ export const Register = () => {
 
   return (
     <div className="py-28">
-      <div className="max-w-[454px] w-full mx-auto">
+      <div className="max-w-[454px] px-6 w-full mx-auto">
         <div className="text-[45px] text-ct-blue-color font-extrabold text-center uppercase">Join us</div>
         <div className="h-0.5 w-full bg-ct-black-color-normal mt-14 mb-8"></div>
         <form onSubmit={handleSubmit(onSubmit)}>
